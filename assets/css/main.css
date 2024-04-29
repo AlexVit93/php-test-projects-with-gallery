@@ -1,0 +1,19 @@
+a {
+  display: inline-block;
+  width: 15vw;
+  height: 4vh;
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s linear;
+}
+
+a:hover {
+  color: aqua;
+}
+
+nav {
+  margin: 5vw !important;
+}
+nav li {
+  list-style-type: none;
+}
