@@ -14,6 +14,23 @@
         <nav class="row">
             <?php include_once("./assets/pages/menu.php");?>
         </nav>
+        <main class="row">
+            <?php if (isset($_GET["page"])){
+                $page = $_GET["page"];
+                if($page == 1)
+                  include_once("./assets/pages/home.php");
+                if($page == 2)
+                  include_once("./assets/pages/upload.php");
+                if($page == 3)
+                  include_once("./assets/pages/gallery.php");
+                if($page == 4)
+                  include_once("./assets/pages/registration.php");
+            }
+            ?>
+        </main>
+        <footer class="row">
+            <?php include_once("./assets/pages/footer.php");?>
+        </footer>
     </div>
 <script src="./assets/js/bootstrap.bundle.js"></script>
 </body>
