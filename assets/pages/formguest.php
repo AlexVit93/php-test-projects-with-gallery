@@ -2,7 +2,7 @@
 $host = 'localhost'; 
 $db = 'созданная база'; 
 $user = 'root'; 
-$pass = '';  
+$pass = 'root';  
 $charset = 'utf8mb4';
 
 
