@@ -6,7 +6,6 @@
     <title>Php Saite</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/guestbook.css">
 </head>
 <body>
     <div class="container col-12 mx-auto">
