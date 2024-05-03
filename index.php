@@ -6,6 +6,7 @@
     <title>Php Saite</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/guestbook.css">
 </head>
 <body>
     <div class="container col-12 mx-auto">
@@ -29,6 +30,8 @@
                   include_once("./assets/pages/gallery.php");
                 if($page == 4)
                   include_once("./assets/pages/registration.php");
+                if($page == 5)
+                  include_once("./assets/pages/guestbook.php");
             }
             ?>
         </main>
