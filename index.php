@@ -12,11 +12,14 @@
         <header class="row">
             <?php include_once("./assets/pages/header.php");?>
         </header>
-        <nav class="row">
-            <?php include_once("./assets/pages/menu.php");?>
-        </nav>
-        <main class="row">
-            <?php if (isset($_GET["page"])){
+
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <?php include_once("./assets/pages/menu.php");?>
+    </nav>
+    
+      <main class="row">
+    
+      <?php if (isset($_GET["page"])){
                 $page = $_GET["page"];
                 if($page == 1)
                   include_once("./assets/pages/home.php");
