@@ -1,6 +1,6 @@
 <?php
-$host = 'localhost'; 
-$db = 'созданная база'; 
+$host = '127.0.0.1:3308'; 
+$db = 'guestbook'; 
 $user = 'root'; 
 $pass = '';  
 $charset = 'utf8mb4';
@@ -24,12 +24,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    // Добавление данных в базу
+    // Добавление данных в таблицу в базе данных
     $sql = "INSERT INTO messages (name, email, message) VALUES (?, ?, ?)";
     $stmt= $pdo->prepare($sql);
     $stmt->execute([$name, $email, $message]);
 }
 
-// Получение данных из базы
+// Получение данных из таблицы в базе данных
 $stmt = $pdo->query("SELECT name, email, message FROM messages");
 $messages = $stmt->fetchAll();
